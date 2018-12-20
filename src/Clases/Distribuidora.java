@@ -4,7 +4,8 @@ public class Distribuidora {
 	
 	private String nombre, comuna, calle; 
 	private int telefono, numero_calle;
-	private Lista lista_clientes, lista_trabajadores;
+	private Lista lista_clientes;
+	private Lista lista_trabajadores;
 	
 	public Distribuidora() {
 		this.nombre = "Distribuidora Abastible";
@@ -12,6 +13,8 @@ public class Distribuidora {
 		this.comuna = "Llay Llay";
 		this.numero_calle = 473;
 		this.telefono = 611498;
+		lista_clientes = new Lista();
+		lista_trabajadores = new Lista();
 	}
 	
 	public String get_nombre() {
