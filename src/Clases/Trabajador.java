@@ -3,9 +3,9 @@ package Clases;
 public class Trabajador extends Persona {
 	private String sector, patente_camioneta;
 
-	public Trabajador(String nombre, String rut, String direccion, int telefono, String sector, String patente) {
+	public Trabajador(String rut, String nombre,String direccion, String comuna, int telefono, String sector, String patente) {
 		
-		super(nombre, rut, direccion, telefono);
+		super(nombre, rut, direccion, telefono,comuna);
 		this.sector = sector;
 		this.patente_camioneta = patente;
 		
