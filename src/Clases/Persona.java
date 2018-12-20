@@ -2,16 +2,17 @@ package Clases;
 
 public abstract class Persona {
 	
-	private String nombre, rut, direccion;
+	private String nombre, rut, direccion, comuna;
 	private int telefono;
 	
 	/*********************** CONSTRUCTOR *****************************/
-	public Persona (String rut, String nombre, String direccion, int telefono)
+	public Persona (String rut, String nombre, String direccion, int telefono, String comuna)
 	{
 		this.rut = rut;
 		this.nombre = nombre;
 		this.direccion = direccion;
 		this.telefono = telefono;
+		this.comuna = comuna;
 	}
 	
 	/********************* SETTERS AND GETTERS ***********************/
@@ -25,9 +26,19 @@ public abstract class Persona {
 	{
 		return rut;
 	}
+	
+	public String get_comuna ()
+	{
+		return comuna;
+	}
 	public void set_nombre (String nombre)
 	{
 		this.nombre = nombre;
+		
+	}
+	public void set_comuna (String comuna)
+	{
+		this.comuna = comuna;
 		
 	}
 	public String get_nombre ()
